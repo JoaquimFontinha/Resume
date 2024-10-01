@@ -1,8 +1,11 @@
 {
+  "homepage": "https://github.com/JoaquimFontinha/Resume",
   "name": "cv-youtube",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
