@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import './Sidebar.css';
-import home from '../../assets/home.png';
-import game_icon from '../../assets/game_icon.png';
-import automobiles from '../../assets/automobiles.png';
-import sports from '../../assets/sports.png';
-import entertainment from '../../assets/entertainment.png';
-import tech from '../../assets/tech.png';
-import music from '../../assets/music.png';
-import blogs from '../../assets/blogs.png';
-import news from '../../assets/news.png';
-import Mail from '../../assets/mail.png';
-import Tel from '../../assets/telephone.png';
-import Linkedin from '../../assets/linkedin.png';
-import carte from '../../assets/carte.png';
+import home from '../../Assets/home.png';
+import game_icon from '../../Assets/game_icon.png';
+import automobiles from '../../Assets/automobiles.png';
+import sports from '../../Assets/sports.png';
+import entertainment from '../../Assets/entertainment.png';
+import tech from '../../Assets/tech.png';
+import music from '../../Assets/music.png';
+import blogs from '../../Assets/blogs.png';
+import news from '../../Assets/news.png';
+import Mail from '../../Assets/mail.png';
+import Tel from '../../Assets/telephone.png';
+import Linkedin from '../../Assets/linkedin.png';
+import carte from '../../Assets/carte.png';
 
 const Sidebar = ({ sidebar, category, setCategory }) => {
     const [activePopup, setActivePopup] = useState(null);
