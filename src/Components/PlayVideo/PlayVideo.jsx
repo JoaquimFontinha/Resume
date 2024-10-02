@@ -1,7 +1,6 @@
 import React from "react"
 import './PlayVideo.css'
 import { useEffect } from 'react'
-import video1 from '../../Assets/video.mp4'
 import like from '../../Assets/like.png'
 import dislike from '../../Assets/dislike.png'
 import share from '../../Assets/share.png'
@@ -9,6 +8,7 @@ import save from '../../Assets/save.png'
 import jack from '../../Assets/jack.png'
 import user_profile from '../../Assets/user_profile.jpg'
 import VideoList from '../../Pages/Video/VideoList.js'
+
 
 const PlayVideo = ({vid, title, views, uploaded, channelname, description, likes, imgyoutubers, Subscribers, description2, description3, commentaire1, photocomm1, likecomm1, commentaire2, photocomm2, likecomm2, commentaire3, photocomm3, likecomm3, commentaire4, photocomm4, likecomm4, commentaire5, photocomm5, likecomm5, commentaire6, photocomm6, likecomm6, nomcomm1, nomcomm2, nomcomm3, nomcomm4, nomcomm5, nomcomm6 }) => {
 
@@ -18,7 +18,7 @@ const PlayVideo = ({vid, title, views, uploaded, channelname, description, likes
 
     return (
         <div className='play-video'>
-            <video src={vid}controls autoPlay muted></video>
+            <video src={vid} controls muted></video>
             <h3>{title}</h3>
             <div className='play-video-info'>
                 <p>{views} Views &bull; {uploaded}</p>
