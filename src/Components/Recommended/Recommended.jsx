@@ -27,9 +27,13 @@ import TOEFL from '../../Assets/12.png'
 import Reactp from '../../Assets/19.png'
 
 const Recommended = () => {
+    const handleClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <div className='recommended'>
-            <Link to={`/video/20/0`} className='side-video-list'>
+            <Link to={`/video/20/0`} className='side-video-list' onClick={handleClick}>
                 <img src={Epitech} alt='' />
                 <div className='video-info'>
                     <h4>Cursus MSc Pro</h4>
@@ -37,7 +41,7 @@ const Recommended = () => {
                     <p>16k Views</p>
                 </div>  
             </Link> 
-            <Link to={`/video/20/1`} className='side-video-list'>
+            <Link to={`/video/20/1`} className='side-video-list' onClick={handleClick}>
                 <img src={ICN} alt='' />
                 <div className='video-info'>
                     <h4>Master - Programme Grande Ecole</h4>
@@ -45,7 +49,7 @@ const Recommended = () => {
                     <p>10k Views</p>
                 </div>  
             </Link> 
-            <Link to={`/video/20/15`} className='side-video-list'>
+            <Link to={`/video/20/15`} className='side-video-list' onClick={handleClick}>
                 <img src={Reactp} alt='' />
                 <div className='video-info'>
                     <h4>React</h4>
@@ -53,7 +57,7 @@ const Recommended = () => {
                     <p>900k Views</p>
                 </div>  
             </Link>
-            <Link to={`/video/20/3`} className='side-video-list'>
+            <Link to={`/video/20/3`} className='side-video-list' onClick={handleClick}>
                 <img src={NUIG} alt='' />
                 <div className='video-info'>
                     <h4>Degree in Marketing</h4>
@@ -61,7 +65,7 @@ const Recommended = () => {
                     <p>10k Views</p>
                 </div>  
             </Link>
-            <Link to={`/video/20/4`} className='side-video-list'>
+            <Link to={`/video/20/4`} className='side-video-list' onClick={handleClick}>
                 <img src={ICN2} alt='' />
                 <div className='video-info'>
                     <h4>Bachelor en Management</h4>
@@ -69,7 +73,7 @@ const Recommended = () => {
                     <p>10k Views</p>
                 </div>  
             </Link> 
-            <Link to={`/video/20/5`} className='side-video-list'>
+            <Link to={`/video/20/5`} className='side-video-list' onClick={handleClick}>
                 <img src={Bichat} alt='' />
                 <div className='video-info'>
                     <h4>Baccalauréat Scientifique</h4>
@@ -77,7 +81,7 @@ const Recommended = () => {
                     <p>10k Views</p>
                 </div>  
             </Link>
-            <Link to={`/video/20/6`} className='side-video-list'>
+            <Link to={`/video/20/6`} className='side-video-list' onClick={handleClick}>
                 <img src={CB} alt='' />
                 <div className='video-info'>
                     <h4>Alternant Marketing Digital</h4>
@@ -85,7 +89,7 @@ const Recommended = () => {
                     <p>10k Views</p>
                 </div>  
             </Link>
-            <Link to={`/video/20/7`} className='side-video-list'>
+            <Link to={`/video/20/7`} className='side-video-list' onClick={handleClick}>
                 <img src={Tafsquare} alt='' />
                 <div className='video-info'>
                     <h4>Stage en Marketing Digital</h4>
@@ -93,15 +97,15 @@ const Recommended = () => {
                     <p>10k Views</p>
                 </div>  
             </Link>
-            <Link to={`/video/20/8`} className='side-video-list'>
+            <Link to={`/video/20/8`} className='side-video-list' onClick={handleClick}>
                 <img src={Coco} alt='' />
                 <div className='video-info'>
-                    <h4>Stage en Marketing Digital et Communication</h4>
-                    <p>The Coco World</p>
+                    <h4>Video Title</h4>
+                    <p>Video Description</p>
                     <p>10k Views</p>
                 </div>  
             </Link>
-            <Link to={`/video/20/9`} className='side-video-list'>
+            <Link to={`/video/20/9`} className='side-video-list' onClick={handleClick}>
                 <img src={Adobe} alt='' />
                 <div className='video-info'>
                     <h4>Adobe Premiere Pro</h4>
@@ -109,7 +113,7 @@ const Recommended = () => {
                     <p>10k Views</p>
                 </div>  
             </Link>
-            <Link to={`/video/20/10`} className='side-video-list'>
+            <Link to={`/video/20/10`} className='side-video-list' onClick={handleClick}>
                 <img src={Soft} alt='' />
                 <div className='video-info'>
                     <h4>Top 5 : Soft Skills</h4>
@@ -117,7 +121,7 @@ const Recommended = () => {
                     <p>10k Views</p>
                 </div>  
             </Link>
-            <Link to={`/video/20/11`} className='side-video-list'>
+            <Link to={`/video/20/11`} className='side-video-list' onClick={handleClick}>
                 <img src={TOEFL} alt='' />
                 <div className='video-info'>
                     <h4>TOEFL 82 - Anglais</h4>
