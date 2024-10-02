@@ -85,7 +85,7 @@ let VideoList = {
             "Subscribers": "2M",
 
             "description2": "- Réalisation de projets concrets en équipe et développement d'applications pratiques.",
-            "description3": "- Apprentissage des méthodologies Agile et des pratiques DevOps.",
+            "description3": "- Apprentissage des méthodologies Agile et des pratiques DevOps. test",
 
 
             "commentaire1": "Excellente présentation de projets et gestion d’équipe. Ces compétences en développement logiciel sont impressionnantes.",
