@@ -1,24 +1,20 @@
-
 # Resume / Portfolio - YouTube Style  📝💼
 
-Bienvenue sur mon CV interactif et original ! Ici, j'ai décidé de présenter mon parcours de manière unique : sous la forme d'une interface YouTube 📺, développée avec React.
+Welcome to my interactive and original CV! Here, I've chosen to present my background in a unique way: as a YouTube interface 📺, developed with React.
 
-## 🎯 Fonctionnalités principales
+## 🎯 Key Features
 
-- **Présentation YouTube** : Mon CV est présenté comme une chaîne YouTube, avec des vidéos sur mes expériences professionnelles, mes compétences, et mes projets.
-- **Catégories filtrables** : Sélectionnez des catégories pour filtrer le contenu, comme *Parcours académique*, *Expériences professionnelles* ou *Portfolio*.
-- **Responsive Design** : Compatible sur tous les appareils (desktop, tablette, mobile).
-- **Sections interactives** : Cliquez sur chaque "vidéo" pour en savoir plus sur mes expériences, formations et projets.
+- **YouTube Presentation**: My CV is presented like a YouTube channel, with videos on my work experiences, skills, and projects.
+- **Filterable Categories**: Select categories to filter content, such as *Academic Background*, *Work Experience*, or *Portfolio*.
+- **Responsive Design**: Compatible across all devices (desktop, tablet, mobile).
+- **Interactive Sections**: Click on each "video" to learn more about my experiences, training, and projects.
 
+## 🛠 Technologies Used
 
-## 🛠 Technologies utilisées
+- **React**: For a dynamic and responsive interface.
+- **React Router**: For navigation between different sections (like playlists).
 
-- **React** : Pour une interface dynamique et réactive.
-- **React Router** : Pour la navigation entre les différentes sections (comme des playlists).
-  
-## 🚀 Lancer le projet
+## 🚀 Launch the Project
 
-Accédez à la version en ligne de mon CV ici :  
-[**Voir le projet**](https://resume-1-psi.vercel.app/)
-
-
+Access the online version of my CV here:  
+[**View the Project**](https://resume-1-psi.vercel.app/)
