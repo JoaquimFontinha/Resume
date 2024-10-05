@@ -4,30 +4,82 @@ import { Link } from "react-router-dom";
 import VideoList from '../../Pages/Video/VideoList.js';
 
 const Feed = ({ category }) => {
-    const [data, setData] = useState([]);
+    const [videosByCategory, setVideosByCategory] = useState({});
+
+    const categoryIcons = {
+        "Formations": "🎓",
+        "Expériences": "🌟",
+        "Skills": "🛠️",
+        "Langues": "🌍",
+        "Techno": "💻",
+        "Hobbies": "🎮",
+        "Portfolio": "📁",
+        "À propos": "📰",
+        
+    };
 
     const fetchData = () => {
-        // Filtre les vidéos en fonction de la catégorie sélectionnée
-        const filteredVideos = VideoList.videos.filter(video => video.category === category || category === 0);
-        console.log("Filtered Videos:", filteredVideos);
-        setData(filteredVideos);
+        const groupedVideos = VideoList.videos.reduce((acc, video) => {
+            if (!acc[video.category]) {
+                acc[video.category] = [];
+            }
+            acc[video.category].push(video);
+            return acc;
+        }, {});
+        setVideosByCategory(groupedVideos);
     };
 
     useEffect(() => {
-        console.log("Selected category:", category)
         fetchData();
-    }, [category]); // Actualise les vidéos à chaque changement de catégorie
+    }, []); // Charge les vidéos une seule fois au montage
+
+    const categories = Object.keys(videosByCategory);
 
     return (
         <div className='feed'>
-            {data.map((video, index) => (
-                <Link key={index} to={`video/1/${video.url}`} className='card'>
-                    <img src={video.img} alt="image" />
-                    <h2>{video.title}</h2>
-                    <h3>{video.channelname}</h3>
-                    <p>{video.views} &bull; {video.uploaded}</p>
-                </Link>
-            ))}
+            {category === 0 ? (
+                categories.map((cat, categoryIndex) => (
+                    <div key={categoryIndex} className='category-section'>
+                        <div className='category-header'>
+                        <i className='category-icon'>{categoryIcons[cat] || "🔗"}</i> {/* Icône par défaut */}
+                        <h2 className='category-title'>{cat}</h2>
+                        <hr className='category-line' />
+                            
+                        </div>
+
+                        <div className='video-row'>
+                            {videosByCategory[cat].map((video, videoIndex) => (
+                                <Link key={videoIndex} to={`video/${cat}/${video.url}`} className='card'>
+                                    <img src={video.img} alt="image" />
+                                    <h2>{video.title}</h2>
+                                    <h3>{video.channelname}</h3>
+                                    <p>{video.views} &bull; {video.uploaded}</p>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                ))
+            ) : (
+                <div className='category-section'>
+                    <div className='category-header'>
+                    <i className='category-icon'>{categoryIcons[category] || "🔗"}</i> {/* Icône par défaut */}
+                    <h2 className='category-title'>{category}</h2>
+                    <hr className='category-line' />
+                        
+                    </div>
+
+                    <div className='video-row'>
+                        {videosByCategory[category]?.map((video, videoIndex) => (
+                            <Link key={videoIndex} to={`video/${category}/${video.url}`} className='card'>
+                                <img src={video.img} alt="image" />
+                                <h2>{video.title}</h2>
+                                <h3>{video.channelname}</h3>
+                                <p>{video.views} &bull; {video.uploaded}</p>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

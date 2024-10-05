@@ -6,6 +6,13 @@ nav{
     position: sticky;
     top: 0;
     z-index: 10;
+
+}
+
+@media (minwidth: 900px) {
+    nav{
+        height: 5vh;
+    }
 }
 
 .nav-left .menu-icon{

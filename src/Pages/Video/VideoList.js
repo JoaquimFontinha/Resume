@@ -70,7 +70,8 @@ let VideoList = {
         {//0
             "url": "0",
             "title": "Cursus MSc Pro",
-            "category": 20,
+            "category": "Formations",
+            "categoryicon": "🎓",
             "channelname": "Epitech",
             "views": "1.5M",
             "uploaded": "1 month ago",
@@ -119,7 +120,7 @@ let VideoList = {
         {
             "url": "1",
             "title": "Master - Programme Grande Ecole",
-            "category": 20,
+            "category": "Formations",
             "channelname": "ICN - Business School",
             "views": "10M",
             "uploaded": "3 years ago",
@@ -169,7 +170,7 @@ let VideoList = {
         {
             "url": "2",
             "title": "Algorithmie et complexité",
-            "category": 20,
+            "category": "Formations",
             "channelname": "Mines Nancy",
             "views": "500K",
             "uploaded": "2 years ago",
@@ -221,7 +222,7 @@ let VideoList = {
         {
             "url": "3",
             "title": "Degree in Marketing",
-            "category": 20,
+            "category": "Formations",
             "channelname": "National University of Ireland",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -272,7 +273,7 @@ let VideoList = {
         {
             "url": "4",
             "title": "Bachelor en Management",
-            "category": 20,
+            "category": "Formations",
             "channelname": "ICN - Business School",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -324,7 +325,7 @@ let VideoList = {
         {
             "url": "5",
             "title": "Baccalauréat Scientifique",
-            "category": 20,
+            "category": "Formations",
             "channelname": "Lycée Ernest Bichat",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -374,7 +375,7 @@ let VideoList = {
         {
             "url": "6",
             "title": "Alternant Marketing Digital",
-            "category": 2,
+            "category": "Expériences",
             "channelname": "CB Consulting - Nancy",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -423,7 +424,7 @@ let VideoList = {
         {
             "url": "7",
             "title": "Stage en Marketing Digital",
-            "category": 2,
+            "category":"Expériences",
             "channelname": "Tafsquare - Belgique",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -473,7 +474,7 @@ let VideoList = {
         {
             "url": "8",
             "title": "Stage en Marketing Digital et Communication", 
-            "category": 2,
+            "category": "Expériences",
             "channelname": "The Coco World - Luxembourg",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -522,7 +523,7 @@ let VideoList = {
         {
             "url": "9",
             "title": "Adobe Premiere Pro",
-            "category": 17,
+            "category": "Skills",
             "channelname": "Suite Adobe",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -573,7 +574,7 @@ let VideoList = {
         {
             "url": "10",
             "title": "Top 5 : Soft Skills",
-            "category": 17,
+            "category": "Skills",
             "channelname": "Soft Skills",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -622,7 +623,7 @@ let VideoList = {
         {
             "url": "11",
             "title": "TOEFL 82 - Anglais",
-            "category": 24,
+            "category": "Langues",
             "channelname": "English",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -672,7 +673,7 @@ let VideoList = {
         {
             "url": "12",
             "title": "HTML",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Front-End",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -722,7 +723,7 @@ let VideoList = {
         {
             "url": "13",
             "title": "CSS",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Front-End",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -771,7 +772,7 @@ let VideoList = {
         {
             "url": "14",
             "title": "JavaScript",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Front-End",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -820,7 +821,7 @@ let VideoList = {
         {
             "url": "15",
             "title": "React",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Frameworks",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -870,7 +871,7 @@ let VideoList = {
         {
             "url": "16",
             "title": "SQL",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Back-End",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -920,7 +921,7 @@ let VideoList = {
         {
             "url": "17",
             "title": "PHP",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Back-End",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -969,7 +970,7 @@ let VideoList = {
         {
             "url": "18",
             "title": "Python",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Developpement",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1018,7 +1019,7 @@ let VideoList = {
         {
             "url": "19",
             "title": "Swift",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Dev. Mobile",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1067,7 +1068,7 @@ let VideoList = {
         {
             "url": "20",
             "title": "Unity",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Game Engine",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1117,7 +1118,7 @@ let VideoList = {
         {
             "url": "21",
             "title": "JLPT N5 - Japonais (en cours)",
-            "category": 24,
+            "category": "Langues",
             "channelname": "日本語",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1167,7 +1168,7 @@ let VideoList = {
         {
             "url": "22",
             "title": "Notion de base - Espagnol",
-            "category": 24,
+            "category": "Langues",
             "channelname": "Español",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1218,7 +1219,7 @@ let VideoList = {
         {
             "url": "23",
             "title": "Notion de base - Allemand",
-            "category": 24,
+            "category": "Langues",
             "channelname": "Deutsch",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1268,7 +1269,7 @@ let VideoList = {
         {
             "url": "24",
             "title": "Canva",
-            "category": 17,
+            "category": "Skills",
             "channelname": "Design",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1318,7 +1319,7 @@ let VideoList = {
         {
             "url": "25",
             "title": "Wordpress",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Dev. Web",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1368,7 +1369,7 @@ let VideoList = {
         {
             "url": "26",
             "title": "Shopify",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Dev. Web",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1418,7 +1419,7 @@ let VideoList = {
         {
             "url": "27",
             "title": "Teams",
-            "category": 17,
+            "category": "Skills",
             "channelname": "Project Management",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1468,7 +1469,7 @@ let VideoList = {
         {
             "url": "28",
             "title": "Photoshop",
-            "category": 17,
+            "category": "Skills",
             "channelname": "Design",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1519,7 +1520,7 @@ let VideoList = {
         {
             "url": "29",
             "title": "Notion",
-            "category": 17,
+            "category": "Skills",
             "channelname": "Project Management",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1569,7 +1570,7 @@ let VideoList = {
         {
             "url": "30",
             "title": "Firebase",
-            "category": 28,
+            "category": "Techno",
             "channelname": "Developpement Mobile et Web",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1619,7 +1620,7 @@ let VideoList = {
         {
             "url": "31",
             "title": "Jeu vidéo",
-            "category": 10,
+            "category": "Hobbies",
             "channelname": "Loisirs",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1669,7 +1670,7 @@ let VideoList = {
         {
             "url": "32",
             "title": "Voyages",
-            "category": 10,
+            "category": "Hobbies",
             "channelname": "Loisirs",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1719,7 +1720,7 @@ let VideoList = {
         {
             "url": "33",
             "title": "FL Studio",
-            "category": 10,
+            "category": "Hobbies",
             "channelname": "Loisirs",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1769,7 +1770,7 @@ let VideoList = {
         {
             "url": "34",
             "title": "Sports",
-            "category": 10,
+            "category": "Hobbies",
             "channelname": "Loisirs",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1819,7 +1820,7 @@ let VideoList = {
         {
             "url": "35",
             "title": "Montage vidéo",
-            "category": 10,
+            "category": "Hobbies",
             "channelname": "Loisirs",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1869,7 +1870,7 @@ let VideoList = {
         {
             "url": "36",
             "title": "À propos de moi",
-            "category": 25,
+            "category": "À propos",
             "channelname": "Présentation",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1919,7 +1920,7 @@ let VideoList = {
         {
             "url": "37",
             "title": "Permis de conduire",
-            "category": 25,
+            "category": "À propos",
             "channelname": "Présentation",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -1969,7 +1970,7 @@ let VideoList = {
         {
             "url": "38",
             "title": "Me contacter",
-            "category": 25,
+            "category": "À propos",
             "channelname": "Présentation",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -2018,7 +2019,7 @@ let VideoList = {
         {
             "url": "39",
             "title": "Linkedin",
-            "category": 25,
+            "category": "À propos",
             "channelname": "Présentation",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -2068,7 +2069,7 @@ let VideoList = {
         {
             "url": "40",
             "title": "Github",
-            "category": 25,
+            "category": "À propos",
             "channelname": "Présentation",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -2118,7 +2119,7 @@ let VideoList = {
         {
             "url": "41",
             "title": "Procreate",
-            "category": 10,
+            "category": "Hobbies",
             "channelname": "Loisirs",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -2168,7 +2169,7 @@ let VideoList = {
         {
             "url": "42",
             "title": "Employé Polyvalent",
-            "category": 2,
+            "category": "Expériences",
             "channelname": "Pharmacie - Blâmont",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -2217,7 +2218,7 @@ let VideoList = {
         {
             "url": "43",
             "title": "Stage en Vente",
-            "category": 2,
+            "category": "Expériences",
             "channelname": "Brico E.Leclerc - Sarrebourg",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -2267,7 +2268,7 @@ let VideoList = {
         {
             "url": "44",
             "title": "Secrétaire Bureau des Voyages - Association",
-            "category": 2,
+            "category": "Expériences",
             "channelname": "ICN - Business School",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -2317,7 +2318,7 @@ let VideoList = {
         {
             "url": "45",
             "title": "Secteurs Géographiques",
-            "category": 25,
+            "category": "À propos",
             "channelname": "Présentation",
             "views": "1M",
             "uploaded": "2 years ago",
@@ -2366,7 +2367,7 @@ let VideoList = {
         {
             "url": "46",
             "title": "Coming Soon",
-            "category": 22,
+            "category": "Portfolio",
             "channelname": "?????",
             "views": "0",
             "uploaded": "Soon",
@@ -2417,7 +2418,7 @@ let VideoList = {
         {
             "url": "47",
             "title": "Coming Soon",
-            "category": 22,
+            "category": "Portfolio",
             "channelname": "?????",
             "views": "0",
             "uploaded": "Soon",
@@ -2467,7 +2468,7 @@ let VideoList = {
         {
             "url": "48",
             "title": "Coming Soon",
-            "category": 22,
+            "category": "Portfolio",
             "channelname": "?????",
             "views": "0",
             "uploaded": "Soon",
@@ -2517,7 +2518,7 @@ let VideoList = {
         {
             "url": "49",
             "title": "Coming Soon",
-            "category": 22,
+            "category": "Portfolio",
             "channelname": "?????",
             "views": "0",
             "uploaded": "Soon",
@@ -2567,7 +2568,7 @@ let VideoList = {
         {
             "url": "50",
             "title": "Coming Soon",
-            "category": 22,
+            "category": "Portfolio",
             "channelname": "?????",
             "views": "0",
             "uploaded": "Soon",

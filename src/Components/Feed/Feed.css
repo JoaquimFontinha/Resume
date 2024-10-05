@@ -1,38 +1,99 @@
-.feed{
+.feed {
+    padding: 20px;
+}
+
+.category-section {
+    margin-bottom: 40px; /* Espacement entre chaque catégorie */
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    margin: 0px 0;
+}
+
+.category-line {
+    flex-grow: 1;
+    border: none;
+    border-top: 2px solid #ccc;
+    margin-left: 10px;
+}
+
+
+.category-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    font-style: normal; /* Assure que le style est normal */
+    font-weight: normal; /* Assure que le poids est normal */
+    display: inline-block; /* Pour éviter tout problème de mise en forme */
+}
+
+.category-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Applique la grid aux vidéos à l'intérieur de chaque catégorie */
+.video-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 16px;
     grid-row-gap: 30px;
-    margin-top: 15px;
-    margin-left: 2%;
+    margin-top: 10px;
 }
 
-.card img{
+@media (min-width: 2000px) {
+    .video-row {
+        grid-template-columns: repeat(6, 1fr); /* Maximum de 6 vidéos par ligne */
+    }
+}
+
+.card {
+    width: 100%; /* Laisse la largeur prendre tout l'espace disponible */
+    text-align: left;
+    height: 250px; /* Hauteur fixe pour toutes les cartes */
+    display: flex; /* Flexbox pour centrer le contenu */
+    flex-direction: column; /* Aligne les enfants en colonne */
+    justify-content: flex-start; /* Commence par le haut */
+}
+
+.card img {
     width: 100%;
+    height: 200px; /* Hauteur fixe pour les images */
+    object-fit: cover; /* Récadre les images pour qu'elles remplissent l'espace */
     border-radius: 5px;
+    padding-bottom: 6px;
 }
 
-.card h2{
+.card h2, .card h3, .card p {
+    margin: 0; /* Supprime la marge */
+    line-height: 1.2; /* Ajuste le line-height pour réduire l'espacement */
+}
+
+.card h2 {
     font-size: 16px;
     font-weight: 600;
     color: #000;
-    margin: 5px 0;
+    padding-bottom: 6px; /* Un petit padding pour espacement */
 }
 
-.card h3{
+.card h3 {
     font-size: 14px;
     font-weight: 600;
     color: #555;
-    margin: 6px 0;
+    padding-bottom: 6px; /* Un petit padding pour espacement */
 }
 
-.card p{
+.card p {
     font-size: 14px;
 }
 
-
+/* Responsive design pour la grid */
 @media (max-width: 900px) {
-    .feed{
+    .feed {
         margin-left: 12%;
+    }
+    .video-row {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }

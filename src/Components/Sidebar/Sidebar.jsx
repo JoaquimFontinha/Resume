@@ -25,34 +25,38 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
         setActivePopup(null);
     };
 
+    const handleCategoryClick = (cat) => {
+        setCategory(cat); // Met à jour la catégorie
+    };
+
     return (
         <div className={`sidebar ${sidebar ? "sidebar" : "small-sidebar"}`}>
             <div className="shortcut-links">
-                <div className={`side-links ${category === 0 ? "active" : ""}`} onClick={() => setCategory(0)}>
+                <div className={`side-links ${category === 0 ? "active" : ""}`} onClick={() => handleCategoryClick(0)}>
                     <img src={home} alt="" /><p>Home</p>
                 </div>
-                <div className={`side-links ${category === 20 ? "active" : ""}`} onClick={() => setCategory(20)}>
+                <div className={`side-links ${category === "Formations" ? "active" : ""}`} onClick={() => handleCategoryClick("Formations")}>
                     <img src={game_icon} alt="" /><p>Formations</p>
                 </div>
-                <div className={`side-links ${category === 2 ? "active" : ""}`} onClick={() => setCategory(2)}>
+                <div className={`side-links ${category === "Expériences" ? "active" : ""}`} onClick={() => handleCategoryClick("Expériences")}>
                     <img src={automobiles} alt="" /><p>Expériences</p>
                 </div>
-                <div className={`side-links ${category === 17 ? "active" : ""}`} onClick={() => setCategory(17)}>
+                <div className={`side-links ${category === "Skills" ? "active" : ""}`} onClick={() => handleCategoryClick("Skills")}>
                     <img src={sports} alt="" /><p>Skills</p>
                 </div>
-                <div className={`side-links ${category === 24 ? "active" : ""}`} onClick={() => setCategory(24)}>
+                <div className={`side-links ${category === "Langues" ? "active" : ""}`} onClick={() => handleCategoryClick("Langues")}>
                     <img src={entertainment} alt="" /><p>Langues</p>
                 </div>
-                <div className={`side-links ${category === 28 ? "active" : ""}`} onClick={() => setCategory(28)}>
+                <div className={`side-links ${category === "Techno" ? "active" : ""}`} onClick={() => handleCategoryClick("Techno")}>
                     <img src={blogs} alt="" /><p>Techno</p>
                 </div>
-                <div className={`side-links ${category === 10 ? "active" : ""}`} onClick={() => setCategory(10)}>
+                <div className={`side-links ${category === "Hobbies" ? "active" : ""}`} onClick={() => handleCategoryClick("Hobbies")}>
                     <img src={music} alt="" /><p>Hobbies</p>
                 </div>
-                <div className={`side-links ${category === 22 ? "active" : ""}`} onClick={() => setCategory(22)}>
+                <div className={`side-links ${category === "Portfolio" ? "active" : ""}`} onClick={() => handleCategoryClick("Portfolio")}>
                     <img src={tech} alt="" /><p>Portfolio</p>
                 </div>
-                <div className={`side-links ${category === 25 ? "active" : ""}`} onClick={() => setCategory(25)}>
+                <div className={`side-links ${category === "À propos" ? "active" : ""}`} onClick={() => handleCategoryClick("À propos")}>
                     <img src={news} alt="" /><p>À propos</p>
                 </div>
                 <hr />
@@ -66,7 +70,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
                 <div className='side-links' onClick={() => handlePopupClick('tel')}>
                     <img src={Tel} alt='' /><p>Tél.</p>
                 </div>
-                <a style={{ color: 'black' }} href='https://www.linkedin.com/in/joaquim-fontinha/'>
+                <a style={{ color: 'black' }} href='https://www.linkedin.com/in/joaquim-fontinha/' target="_blank" rel="noopener noreferrer">
                     <div className='side-links'>
                         <img src={Linkedin} alt='' /><p>Linkedin</p>
                     </div>
@@ -91,7 +95,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
                     <div className='popup-content'>
                         <h2>Contactez-moi</h2>
                         <p style={{ fontWeight: 'bold' }}>Téléphone :</p>
-                            <p>(+33)6 35 46 06 23</p>
+                        <p>(+33)6 35 46 06 23</p>
                         <button onClick={closePopup}>Fermer</button>
                     </div>
                 </div>
